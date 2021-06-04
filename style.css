@@ -1,0 +1,67 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: white;
+}
+
+body{
+    background:#012E40;
+}
+main {
+    max-width: 250px;
+    margin:  100px auto;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    height: 10%;
+    width: auto;
+    padding: 15px;
+    justify-content: center;
+    
+    
+}
+.coin-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+.coin {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:  5px 5px 5px 0;
+}
+
+.bitcoin-item{
+    background-color: #F2B705;
+    box-shadow: 3px 1px 2px 2.5px #00000033;
+    cursor: pointer;
+}
+
+.dollar-item{
+    opacity: 0;
+    background-color: green;
+    animation-duration: .5s;
+    animation-fill-mode:forwards;
+    animation-name: opacity;
+    box-shadow: 3px 1px 2px 2.5px #00000033;
+    cursor: pointer;
+    border-radius: 10%;
+    width: 50px;
+    font-size: 13px;
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
